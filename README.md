@@ -2,7 +2,12 @@
 ### Scrimba solo project - Learn JavaScript course
 
 Project screen:
+
 ![project image](/img/screen.jpg)
+
+###Project page:
+
+[Password generator](https://agnkos.github.io/password-generator/)
 
 #### Project description:
 Create a random password generator 
