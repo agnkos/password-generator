@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #1F2937;
+    padding: 10%;
+    font-family: 'Inter', sans-serif;
+    color: #D5D4D8;
+}
+
+.heading {
+    color: #FFFFFF;
+    font-family: 'Karla', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.025em;
+    margin-bottom: 2px;
+}
+
+.heading span {
+    color: #4ADF86;
+}
+
+.sup-text {
+    margin-top: 2px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #D5D4D8;
+}
+
+.options {
+    margin: 60px 0 20px 0;
+}
+
+#pass-length {
+    background: #273549;
+    border: none;
+    padding: 5px;
+    height: 15px;
+    border-radius: 6px;
+    text-align: center;
+    color: #10B981;
+    outline: none;
+}
+
+.checkboxes {
+    margin-top: 15px;
+}
+
+input[type=checkbox] {
+    margin-left: 10px;
+}
+
+#error-msg {
+    font-style: italic;
+    font-size: 14px;
+}
+
+button {
+    font-size: 14px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #10b983;
+    color: #FFFFFF;
+}
+
+button:active {
+    background-color: #0c986b;
+}
+
+hr {
+    margin: 30px 0;
+    border: 1px solid #2F3E53;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+output {
+    position: relative;
+    flex-grow: 1;
+    background: #273549;
+    border: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 6px;
+    text-align: center;
+    color: #10B981;
+    outline: none;
+}
+
+.copy {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #10B981;
+    color: #FFFFFF;
+    border-radius: 6px;
+    font-size: 10px;
+    padding: 3px;
+    visibility: hidden;
+}
+
+.show {
+    animation: copy 3s ease-out;
+}
+
+@keyframes copy {
+
+    from {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.copy-info {
+    text-align: center;
+    font-size: 14px;
+}
+
+@media (max-width: 495px) {
+    #pass-length {
+        margin-top: 10px;
+    }
+}
+
+@media (max-device-width: 875px) {
+    .sup-text {
+        margin-top: 10px;
+    }
+}
