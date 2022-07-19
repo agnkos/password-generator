@@ -5,7 +5,7 @@ Project screen:
 
 ![project image](/img/screen.jpg)
 
-###Project page:
+**Project page**:
 
 [Password generator](https://agnkos.github.io/password-generator/)
 
