@@ -8,8 +8,6 @@ const numSymbLess = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L",
 let passEl = document.getElementById('pass-el');
 let passEl2 = document.getElementById('pass-el2');
 let chosenArray = [];
-let showEl = document.getElementById('copy');
-let showEl2 = document.getElementById('copy2');
 
 function chooseArray() {
     let numCheck = document.getElementById('numbers');
@@ -48,27 +46,16 @@ function generatePassword() {
     }
 }
 
-
-function copyPassword() {
+function copyPassword(passwordElementId, showElementId, number) {
+    let passEl = document.getElementById(passwordElementId);
+    let showEl = document.getElementById(showElementId);
     let copyText = passEl.textContent;
     navigator.clipboard.writeText(copyText);
-    console.log('Password 1 copied!');
+    console.log(`Password ${number} copied!`);
     if (!showEl.classList.contains('show')) {
         showEl.classList.add('show');
     }
     setTimeout(function () {
         showEl.classList.remove('show')
-    }, 2000)
-}
-
-function copyPassword2() {
-    let copyText2 = passEl2.textContent;
-    navigator.clipboard.writeText(copyText2);
-    console.log('Password 2 copied!');
-    if (!showEl2.classList.contains('show')) {
-        showEl2.classList.add('show');
-    }
-    setTimeout(function () {
-        showEl2.classList.remove('show')
     }, 2000)
 }
